@@ -97,7 +97,7 @@ jobs:
        passphrase: ${{ secrets.PASSPHRASE }}
        script: |
          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/foodgram:latest
-         id=$(docker create ${{ secrets.DOCKER_USERNAME }}/foodgram:latest
+         id=$(docker create ${{ secrets.DOCKER_USERNAME }}/foodgram:latest)
          FILE=docker-compose.yaml
          if [ -f "$FILE" ]
          then
